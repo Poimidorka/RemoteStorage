@@ -6,7 +6,8 @@
 template<class K = std::string, class V = std::string>
 class StorageInterface {
    public:
-    virtual V get(const K &key) = 0;
+    virtual V& get(const K &key) = 0;
+    virtual const V& get(const K &key) const = 0;
     virtual void put(K key, V value) = 0;
     virtual void put(K key, V&& value) = 0;
 };
