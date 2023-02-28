@@ -75,9 +75,5 @@ void ByteStorage::put(ByteLine key, ByteLine&& value) {
 }
 
 ByteLine& ByteStorage::get(const ByteLine &key) {
-    return data[key];
-}
-
-const ByteLine& ByteStorage::get(const ByteLine &key) const {
     return data.at(key);
 }

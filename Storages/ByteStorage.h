@@ -33,10 +33,10 @@ struct ByteHash {
 class ByteStorage: public StorageInterface<ByteLine, ByteLine> {
    private:
     std::unordered_map<ByteLine, ByteLine, ByteHash> data;
+   public:
     void put(ByteLine key, ByteLine value) override;
     void put(ByteLine key, ByteLine&& value) override;
     ByteLine& get(const ByteLine &key) override;
-    [[nodiscard]] const ByteLine& get(const ByteLine &key) const override;
 };
 
 

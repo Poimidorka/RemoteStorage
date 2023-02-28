@@ -3,4 +3,4 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(untitled main.cpp Connection/Connection.cpp Connection/Connection.h Storages/StorageInterface.h Storages/ByteStorage.cpp Storages/ByteStorage.h)
+add_executable(untitled main.cpp Connection/Connection.cpp Connection/Connection.h Storages/StorageInterface.h Storages/ByteStorage.cpp Storages/ByteStorage.h Executor/Execute.cpp Executor/Execute.h)
